@@ -1,0 +1,111 @@
+.movie-ui {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.movie-card {
+    width: 380px;
+    display: flex;
+    align-items: stretch;
+    padding: 16px;
+    border-radius: 20px;
+    gap: 16px;
+    background: linear-gradient(135deg, rgba(79, 3, 255, 0.85), rgba(2, 2, 124, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ✅ moved here */
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);                           /* ✅ lift instead of sideways */
+    box-shadow: 0 16px 40px rgba(107, 18, 250, 0.4);
+}
+
+.movie-poster {
+    width: 130px;
+    min-height: 180px;
+    border-radius: 14px;
+    object-fit: cover;                                     /* ✅ cover instead of fill */
+    flex-shrink: 0;
+}
+
+.right-part {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;                                              /* ✅ consistent spacing */
+    flex: 1;
+}
+
+.rate-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.movie-rating {
+    color: navy;
+    padding: 3px 12px;
+    background: yellow;
+    width: fit-content;
+    border-radius: 24px;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.like-btn:hover {
+    transform: scale(1.3);
+}
+
+.like-btn.liked {
+    transform: scale(1.1);
+}
+
+.movie-title {
+    color: bisque;
+    font-weight: bold;
+    font-size: 1.1rem;                                     /* ✅ slightly smaller, cleaner */
+    line-height: 1.3;
+    margin: 0;
+}
+
+.movie-info {
+    display: flex;
+    gap: 12px;                                             /* ✅ gap instead of space-between */
+    color: rgba(255, 255, 255, 0.7);                       /* ✅ subtle, not full white */
+    font-size: 0.8rem;
+}
+
+.movie-info p {
+    margin: 0;
+}
+
+.movie-cast {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.78rem;                                    /* ✅ smaller — less important info */
+    line-height: 1.4;
+}
+
+.movie-director {
+    color: white;
+    width: fit-content;
+    padding: 3px 12px;
+    background: blueviolet;
+    border-radius: 16px;
+    font-size: 0.78rem;
+    margin-top: auto;                                      /* ✅ pushes to bottom of card */
+}

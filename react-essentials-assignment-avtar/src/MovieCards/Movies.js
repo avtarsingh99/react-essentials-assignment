@@ -1,0 +1,222 @@
+export const movies = [
+    {
+      id: 1,
+      title: "Dilwale Dulhania Le Jayenge",
+      rating: 8.1,
+      category: "Bollywood",
+      genre: "Romance",
+      year: 1995,
+      director: "Aditya Chopra",
+      image: "https://imgs.search.brave.com/uEz01VACm60lmw3ghJeai4wR7cKHiwBlf_T1Rd7hfII/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9mcm9o/ZXlvLXN0b3JlLm15/c2hvcGlmeS5jb20v/Y2RuL3Nob3AvZmls/ZXMvQkxZMjBfTmV2/ZXJFbmRpbmdMb3Zl/LURETEoucG5nP3Y9/MTczMjM2NTQ3OQ",
+      cast: ["Shah Rukh Khan", "Kajol", "Amrish Puri"]
+    },
+    {
+      id: 2,
+      title: "Inception",
+      rating: 8.8,
+      category: "Hollywood",
+      genre: "Sci-Fi",
+      year: 2010,
+      director: "Christopher Nolan",
+      image: "https://imgs.search.brave.com/lGFwS5X-rXMCYev8f6SNuiJvXp7e2omAn6dtPhMFc0M/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2lraWEubm9j/b29raWUubmV0L2lu/Y2VwdGlvbi9pbWFn/ZXMvOS85MS9JbmNl/cHRpb25fcG9zdGVy/LmpwZy9yZXZpc2lv/bi9sYXRlc3Qvc2Nh/bGUtdG8td2lkdGgt/ZG93bi8yNTA_Y2I9/MjAxNDA2MTIwMTA4/MTQ",
+      cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page"]
+    },
+    {
+      id: 3,
+      title: "3 Idiots",
+      rating: 8.4,
+      category: "Bollywood",
+      genre: "Comedy",
+      year: 2009,
+      director: "Rajkumar Hirani",
+      image: "https://imgs.search.brave.com/sc4FOkTsh9Gf0D25kzM4ko6rBNOlPxkm2gjTq2tJBM4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDY1Njgz/ODcuanBn",
+      cast: ["Aamir Khan", "R. Madhavan", "Sharman Joshi"]
+    },
+    {
+      id: 4,
+      title: "The Dark Knight",
+      rating: 9.0,
+      category: "Hollywood",
+      genre: "Action",
+      year: 2008,
+      director: "Christopher Nolan",
+      image: "https://imgs.search.brave.com/3tEZZ847bn0vW1vdjzjW7XsX9Ifld15VHTzsPauKq8Q/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI2OTU0/MDUuanBn",
+      cast: ["Christian Bale", "Heath Ledger", "Gary Oldman"]
+    },
+    {
+      id: 5,
+      title: "Interstellar",
+      rating: 8.7,
+      category: "Hollywood",
+      genre: "Sci-Fi",
+      year: 2014,
+      director: "Christopher Nolan",
+      image: "https://imgs.search.brave.com/BmobvXg7Us1dm69-Y08gv8x3t7kVcT8vGNeSaWJ-_Nw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMtaW4uYm1zY2Ru/LmNvbS9pZWRiL21v/dmllcy9pbWFnZXMv/ZXh0cmEvdmVydGlj/YWxfbG9nby9tb2Jp/bGUvdGh1bWJuYWls/L3h4bGFyZ2UvaW50/ZXJzdGVsbGFyLWV0/MDAwMTkwNjYtMTkt/MDItMjAyMS0wMi0y/NS0xMi5qcGc",
+      cast: ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    },
+    {
+      id: 6,
+      title: "The Godfather",
+      rating: 9.2,
+      category: "Hollywood",
+      genre: "Drama",
+      year: 1972,
+      director: "Francis Ford Coppola",
+      image: "https://imgs.search.brave.com/tcGRPd5NleRrK912ypjoh6MD9UH9YMIF1JyFM0ipIoI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTI1/NTk2OTc4L3Bob3Rv/L2FsLXBhY2luby1k/dXJpbmctdGhlLWZp/bGltaW5nLW9mLXRo/ZS1nb2RmYXRoZXIt/cGFydC1paS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9Mll1/LWtKM21ZUk5mekw1/aDRXY3JyMXoxeFIz/MXRmZjBMb1ZoVmRM/Vl9kcz0",
+      cast: ["Marlon Brando", "Al Pacino", "James Caan"]
+    },
+    {
+      id: 7,
+      title: "Pulp Fiction",
+      rating: 8.9,
+      category: "Hollywood",
+      genre: "Crime",
+      year: 1994,
+      director: "Quentin Tarantino",
+      image: "https://imgs.search.brave.com/AV9mRfnC-C_akoUXFNVeRZRuCApr3BLZLI668yKmN9o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/ZGlzcGxhdGUuY29t/L2FydHdvcmsvMjcw/eDM4MC8yMDI1LTAy/LTAzLzhjYWYyZDY1/LWEwZTgtNGVjZi1h/YTE5LWNlMTY2NzA3/N2JiOC5qcGc",
+      cast: ["John Travolta", "Uma Thurman", "Samuel L. Jackson"]
+    },
+    {
+      id: 8,
+      title: "Dangal",
+      rating: 8.3,
+      category: "Bollywood",
+      genre: "Sports",
+      year: 2016,
+      director: "Nitesh Tiwari",
+      image: "https://imgs.search.brave.com/aBQAjkMqixcfO5RA28mLacrLmKcx7Hu3C0Bz-c_z7fs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDQ2Mjc2/MTguanBn",
+      cast: ["Aamir Khan", "Sakshi Tanwar", "Fatima Sana Shaikh"]
+    },
+    {
+      id: 9,
+      title: "The Matrix",
+      rating: 8.7,
+      category: "Hollywood",
+      genre: "Action",
+      year: 1999,
+      director: "Lana Wachowski",
+      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&q=80",
+      cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    },
+    {
+      id: 10,
+      title: "Parasite",
+      rating: 8.5,
+      category: "Hollywood",
+      genre: "Thriller",
+      year: 2019,
+      director: "Bong Joon Ho",
+      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&q=80",
+      cast: ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"]
+    },
+    {
+      id: 11,
+      title: "Andhadhun",
+      rating: 8.2,
+      category: "Bollywood",
+      genre: "Thriller",
+      year: 2018,
+      director: "Sriram Raghavan",
+      image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&q=80",
+      cast: ["Ayushmann Khurrana", "Tabu", "Radhika Apte"]
+    },
+    {
+      id: 12,
+      title: "The Shawshank Redemption",
+      rating: 9.3,
+      category: "Hollywood",
+      genre: "Drama",
+      year: 1994,
+      director: "Frank Darabont",
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=80",
+      cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+    },
+    {
+      id: 13,
+      title: "Lagaan",
+      rating: 8.1,
+      category: "Bollywood",
+      genre: "Drama",
+      year: 2001,
+      director: "Ashutosh Gowariker",
+      image: "https://imgs.search.brave.com/IFq6VmYyEMt1H_WeU6iu0SQ5tu7oLGb77BGeu7ltz6c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzhmL2Fk/LzM1LzhmYWQzNTcz/MTE2YmI5MzE1YWI2/NjJkNzM0MTM4Mjlj/LmpwZw",
+      cast: ["Aamir Khan", "Gracy Singh", "Rachel Shelley"]
+    },
+    {
+      id: 14,
+      title: "Gladiator",
+      rating: 8.5,
+      category: "Hollywood",
+      genre: "Action",
+      year: 2000,
+      director: "Ridley Scott",
+      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=80",
+      cast: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
+    },
+    {
+      id: 15,
+      title: "Zindagi Na Milegi Dobara",
+      rating: 8.2,
+      category: "Bollywood",
+      genre: "Adventure",
+      year: 2011,
+      director: "Zoya Akhtar",
+      image: "https://imgs.search.brave.com/kiDnT7gOO_kwndxdzBqzPqWk2LG4GjlkfszsrF0FWn0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJhY2Nlc3Mu/Y29tL2Z1bGwvMzgy/MTM4Mi5qcGc",
+      cast: ["Hrithik Roshan", "Farhan Akhtar", "Abhay Deol"]
+    },
+    {
+      id: 16,
+      title: "Avatar",
+      rating: 7.9,
+      category: "Hollywood",
+      genre: "Sci-Fi",
+      year: 2009,
+      director: "James Cameron",
+      image: "https://imgs.search.brave.com/xKI_o8uxJhqlMEPKXnY396cwFEepOGzP1PiVxjSxCgs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sdW1p/ZXJlLWEuYWthbWFp/aGQubmV0L3YxL2lt/YWdlcy9wX2Rpc25l/eXBsdXNvcmlnaW5h/bHNfYXZhdGFyX3Ro/ZXdheW9md2F0ZXJf/cG9zdGVyX3JlYnJh/X2ZhMDg2MzZkLmpw/ZWc",
+      cast: ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
+    },
+    {
+      id: 17,
+      title: "Drishyam",
+      rating: 8.2,
+      category: "Bollywood",
+      genre: "Crime",
+      year: 2015,
+      director: "Nishikant Kamat",
+      image: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?w=500&q=80",
+      cast: ["Ajay Devgn", "Tabu", "Shriya Saran"]
+    },
+    {
+      id: 18,
+      title: "Sholay",
+      rating: 8.1,
+      category: "Bollywood",
+      genre: "Action",
+      year: 1975,
+      director: "Ramesh Sippy",
+      image: "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?w=500&q=80",
+      cast: ["Amitabh Bachchan", "Dharmendra", "Hema Malini"]
+    },
+    {
+      id: 19,
+      title: "Barfi!",
+      rating: 8.1,
+      category: "Bollywood",
+      genre: "Romance",
+      year: 2012,
+      director: "Anurag Basu",
+      image: "https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=500&q=80",
+      cast: ["Ranbir Kapoor", "Priyanka Chopra", "Ileana D'Cruz"]
+    },
+    {
+      id: 20,
+      title: "Gangs of Wasseypur",
+      rating: 8.2,
+      category: "Bollywood",
+      genre: "Crime",
+      year: 2012,
+      director: "Anurag Kashyap",
+      image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=500&q=80",
+      cast: ["Manoj Bajpayee", "Nawazuddin Siddiqui", "Pankaj Tripathi"]
+    }
+  ];

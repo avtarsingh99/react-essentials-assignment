@@ -1,0 +1,85 @@
+.movie-app{
+    background: linear-gradient(to bottom right, rgb(116, 109, 255), rgb(0, 18, 100));
+    text-align: center;
+    min-height: 100vh;   
+    width: 100%;
+    padding-bottom: 40px; 
+    box-sizing: border-box;
+}
+
+.heading{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+.search-input{
+    padding: 12px 48px;
+    width: 600px;
+    border: none;
+    border-radius: 20px;
+}
+
+.filter-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.filter-section h4{
+    color: yellow;
+}
+
+.genre-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    margin-left: 32px;
+}
+
+.genre-chip{
+    padding: 6px 16px;
+    font-size: 0.9rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+.genre-chip:hover{
+    background-color: yellowgreen;
+    color: black;
+    border: none;
+    transform: translate(4px);
+    transition: 0.5s ease;
+}
+
+.clear-filter{
+    border: none;
+    border-radius: 16px;
+    padding: 4px 20px;
+}
+
+.clear-filter:hover{
+    font-weight: bold;
+    transform: translate(4px);
+    transition: 0.5s ease;
+}
+
+.sort-section{
+    margin-bottom: 32px;
+}
+
+.sort-section label{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.sort-section select{
+    padding: 8px 24px;
+    border: none;
+    border-radius: 12px;
+}

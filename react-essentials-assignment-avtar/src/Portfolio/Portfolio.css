@@ -1,7 +1,8 @@
 .card{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: grid;
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     max-width: 500px;
     height: auto;
     border-radius: 24px;
@@ -34,10 +35,22 @@
     color: #333;
 }
 
+.card.dark .name{
+    color: white;
+}
+
 .role{
     font-size: 1.1rem;
     font-weight: 500;
     color: #757575;
+}
+
+.card.dark .role{
+    color: whitesmoke;
+}
+
+.card.dark .skills-heading{
+    color: white;
 }
 
 .skills-section{
@@ -54,6 +67,11 @@
     border: 1px solid rgb(147,219, 255);
 }
 
+.card.dark .skill{
+    color: white;
+    border: 1px solid white;
+}
+
 .skill:hover{
     transform: translate(4px);
     cursor: pointer;
@@ -66,11 +84,24 @@
 .bottom-row{
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
 }
 
-.contact{
-    display: flex;
-    justify-content: space-between;
+.contact-btn{
+    background: blueviolet; 
+    color: white;
+    margin-left: 20px;
+}
+
+.contact-btn:hover{
+    cursor: pointer;
+    color: blueviolet;
+    background: white;
+    border: 1px solid blueviolet;
+}
+
+.card.dark .contact-btn:hover{
+    border:none;
 }
 
 .theme-btn,
@@ -78,15 +109,21 @@
 .contact-btn{
     padding: 6px 16px;
     border: none;
-    border-radius: 20px;
+    border-radius: 12px;
     font-size: 0.9rem;
-    font-weight: 400;
+    font-weight: 600;
 }
+
+
 
 .bio{
     font-size: 1rem;
     color: #757575;
     line-height: 1.5rem;
     font-weight: 200;
+}
+
+.card.dark .bio{
+    color: bisque;
 }
 
