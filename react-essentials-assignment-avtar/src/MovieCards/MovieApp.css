@@ -57,6 +57,14 @@
     transition: 0.5s ease;
 }
 
+.genre-chip-active{
+    background-color: yellowgreen;
+    color: black;
+    border: none;
+    transform: translate(4px);
+    transition: 0.5s ease;
+}
+
 .clear-filter{
     border: none;
     border-radius: 16px;

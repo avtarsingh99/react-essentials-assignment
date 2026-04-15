@@ -56,9 +56,9 @@ function MovieApp() {
             <div className='filter-section'>
                 <h4>Filter by Genre:</h4>
                 <div className='genre-cards'>
-                    {genres.map((genre)=>{
+                    {genres.map((genre, index)=>{
                        return <button 
-                        className='genre-chip'
+                        className={`genre-chip ${selectedGenre === genre? "genre-chip-active" : ""}`}
                         key={genre}
                         onClick={()=>{setSelectedGenre(genre)}}
                         >{genre}</button>

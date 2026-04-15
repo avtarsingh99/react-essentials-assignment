@@ -31,7 +31,7 @@ function Portfolio() {
                     <button className='theme-btn' onClick={() => (SetIsDark(!isDark))}>{isDark ? 'Light' : 'Dark'}</button>
                     <div className='contact'>
                         <button className= {`like-btn ${isLiked ? 'liked' : ''}`} onClick={() => setIsLiked(!isLiked)} >{isLiked?'❤️':'♡'}</button>
-                        <button className='contact-btn'>Contact</button>
+                        <a href='https://www.linkedin.com/in/avtar-singh-73a888235/'><button className='contact-btn'>Contact</button></a>
                     </div>
                 </div>
             </div>
