@@ -7,7 +7,7 @@ import MovieApp from './MovieCards/MovieApp';
 function App() {
 
   const [activeProject, setActiveProject] = useState(1);
-  console.log("Ganit is ganit")
+
   return (
       <div className="App">
       <div className='btns'>

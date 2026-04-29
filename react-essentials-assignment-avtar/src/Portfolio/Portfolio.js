@@ -1,37 +1,48 @@
 import React, { useState } from 'react'
 import './Portfolio.css'
+import { profiles } from './Profiles'
 
-const skills = ["Design System", "ReactJS", "TypeScript", "Figma", "Prototyping", "A/B Testing"]
 
 function Portfolio() {
 
     const [isDark, SetIsDark] = useState(false)
     const [isLiked, setIsLiked] = useState(false)
+    const [currentIndex, setCurrentIndex] = useState(0);  
+
+    const profile = profiles[currentIndex] // show 1st object's content by default
+
+    const handlePrev = () => setCurrentIndex((i) => (i - 1 + profiles.length) % profiles.length);
+    const handleNext = () => setCurrentIndex((i) => (i + 1) % profiles.length);
 
     return (
         <>
             <div className={`card ${isDark ? 'dark' : ''}`} style={{ background: isDark ? '#3a3a3a' : 'white' }} >
                 <div className='header'>
-                    <img src='/profile-pic.png' alt='profile-image' className='profile-pic'></img>
+                    <img src={profile.profile} alt='profile-image' className='profile-pic'></img>
                     <div className='title'>
-                        <div className='name'>Avtar Singh</div>
-                        <p className='role'>Product Designer & Frontend Engineer</p>
+                        <div className='name'>{profile.name}</div>
+                        <p className='role'>{profile.role}</p>
                     </div>
                 </div>
-                <p className='bio'>I design and build calm, focused product experiences for fast-moving teams. Currently exploring AI-assisted interfaces, design systems, and high-performance UI engineering.</p>
+                <p className='bio'>{profile.bio}</p>
                 <div className='skills'>
                     <p className='skills-heading'>Skills:</p>
                     <div className='skills-section'>
-                        {skills.map((skill, index) => {
+                        {profile.skills.map((skill, index) => {
                             return <div key={index} className='skill'>{skill}</div>
-                        })}
+                        })} 
                     </div>
                 </div>
                 <div className='bottom-row'>
                     <button className='theme-btn' onClick={() => (SetIsDark(!isDark))}>{isDark ? 'Light' : 'Dark'}</button>
+                    <div className='arrow-btns'>
+                        <button onClick={handlePrev}>←</button>
+                        <button onClick={handleNext}>→</button>
+                        <p>{currentIndex + 1}/{profiles.length}</p>
+                    </div>
                     <div className='contact'>
-                        <button className= {`like-btn ${isLiked ? 'liked' : ''}`} onClick={() => setIsLiked(!isLiked)} >{isLiked?'❤️':'♡'}</button>
-                        <a href='https://www.linkedin.com/in/avtar-singh-73a888235/'><button className='contact-btn'>Contact</button></a>
+                        <button className= {`like-btn ${isLiked ? 'liked' : ''}`} onClick={() => setIsLiked(!isLiked)} >{isLiked?'♡ 129':'♡ 128'}</button>
+                        <a href='#'><button className='contact-btn'>Contact</button></a>
                     </div>
                 </div>
             </div>

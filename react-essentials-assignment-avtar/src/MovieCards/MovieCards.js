@@ -2,17 +2,7 @@ import React, { useState } from 'react'
 import { movies } from './Movies'
 import './MovieCards.css';
 
-function MovieCards({m}) {
-
-  const [likedMovies, setLikedMovies] = useState([])
-
-  const handleLike = (title)=>{
-    if(likedMovies.includes(title)){
-      setLikedMovies(likedMovies.filter(t=> t !== title))
-    } else{
-      setLikedMovies([...likedMovies, title])
-    }
-  }
+function MovieCards({m, handleLike, likedMovies}) {
 
   return (
     <div className='movie-ui'>
@@ -23,7 +13,7 @@ function MovieCards({m}) {
           <div className='right-part'>
           <div className='rate-section'>
           <div className='movie-rating'>{movie.rating}</div>
-          <button className={`like-btn ${isLiked? 'liked' : ''}`} onClick={()=>handleLike(movie.title)}>{isLiked?'❤️':'♡'}</button>
+          <button className={`like-btn ${isLiked? 'liked' : ''}`} onClick={()=>handleLike(movie.title)}>{isLiked?'♡ Favorited':'♡ Favorite'}</button>
           </div>
             <h2 className='movie-title'>{movie.title}</h2>
             <div className='movie-info'>

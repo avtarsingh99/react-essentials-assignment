@@ -14,14 +14,13 @@
     padding: 16px;
     border-radius: 20px;
     gap: 16px;
-    background: linear-gradient(135deg, rgba(79, 3, 255, 0.85), rgba(2, 2, 124, 0.95));
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ✅ moved here */
+    background: white;
+    border: 0.5px solid rgba(137, 43, 226, 0.256);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .movie-card:hover {
-    transform: translateY(-6px);                           /* ✅ lift instead of sideways */
+    transform: translateY(-6px);                           
     box-shadow: 0 16px 40px rgba(107, 18, 250, 0.4);
 }
 
@@ -29,7 +28,7 @@
     width: 130px;
     min-height: 180px;
     border-radius: 14px;
-    object-fit: cover;                                     /* ✅ cover instead of fill */
+    object-fit: cover;                                    
     flex-shrink: 0;
 }
 
@@ -37,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 8px;                                              /* ✅ consistent spacing */
+    gap: 8px;                                              
     flex: 1;
 }
 
@@ -60,25 +59,33 @@
 }
 
 .like-btn {
-    background: none;
+    background: lightgray;
+    color: black;
     border: none;
-    font-size: 1.4rem;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    padding: 4px 12px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .like-btn:hover {
-    transform: scale(1.3);
-}
-
-.like-btn.liked {
     transform: scale(1.1);
 }
 
-.movie-title {
-    color: bisque;
+.like-btn.liked {
+    background: red;
+    color: white;
+    font-size: 0.8rem;
     font-weight: bold;
-    font-size: 1.1rem;                                     /* ✅ slightly smaller, cleaner */
+    border-radius: 16px;
+    padding: 4px 12px;
+}
+
+.movie-title {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 1.5rem;                                     /* ✅ slightly smaller, cleaner */
     line-height: 1.3;
     margin: 0;
 }
@@ -86,7 +93,7 @@
 .movie-info {
     display: flex;
     gap: 12px;                                             /* ✅ gap instead of space-between */
-    color: rgba(255, 255, 255, 0.7);                       /* ✅ subtle, not full white */
+    color: #333;                       /* ✅ subtle, not full white */
     font-size: 0.8rem;
 }
 
@@ -95,18 +102,18 @@
 }
 
 .movie-cast {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.78rem;                                    /* ✅ smaller — less important info */
+    color: #333;
+    font-size: 1rem;                                    /* ✅ smaller — less important info */
     line-height: 1.4;
     text-align: start;
 }
 
 .movie-director {
-    color: white;
+    color: blueviolet;
     width: fit-content;
-    padding: 3px 12px;
-    background: blueviolet;
+    padding: 4px 16px;
+    background: rgb(236, 216, 255);
     border-radius: 16px;
-    font-size: 0.78rem;
+    font-size: 0.9rem;
     margin-top: auto;                                      /* ✅ pushes to bottom of card */
 }
