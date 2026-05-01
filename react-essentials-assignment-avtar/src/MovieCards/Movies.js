@@ -95,7 +95,7 @@ export const movies = [
       genre: "Action",
       year: 1999,
       director: "Lana Wachowski",
-      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=500&q=80",
+      image: "https://m.media-amazon.com/images/I/91G9FevmckL._AC_UF1000,1000_QL80_.jpg",
       cast: ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
     },
     {
@@ -106,7 +106,7 @@ export const movies = [
       genre: "Thriller",
       year: 2019,
       director: "Bong Joon Ho",
-      image: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&q=80",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn1doKaumoUXnbt6EZU2nBQ6Rcb5v7GFsaww&s",
       cast: ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"]
     },
     {
@@ -117,7 +117,7 @@ export const movies = [
       genre: "Thriller",
       year: 2018,
       director: "Sriram Raghavan",
-      image: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500&q=80",
+      image: "https://upload.wikimedia.org/wikipedia/en/4/47/Andhadhun_poster.jpg",
       cast: ["Ayushmann Khurrana", "Tabu", "Radhika Apte"]
     },
     {
@@ -128,7 +128,7 @@ export const movies = [
       genre: "Drama",
       year: 1994,
       director: "Frank Darabont",
-      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=80",
+      image: "https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_.jpg",
       cast: ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
     },
     {
@@ -150,7 +150,7 @@ export const movies = [
       genre: "Action",
       year: 2000,
       director: "Ridley Scott",
-      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500&q=80",
+      image: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Gladiator_%282000_film_poster%29.png/250px-Gladiator_%282000_film_poster%29.png",
       cast: ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen"]
     },
     {
@@ -183,7 +183,7 @@ export const movies = [
       genre: "Crime",
       year: 2015,
       director: "Nishikant Kamat",
-      image: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?w=500&q=80",
+      image: "https://i0.wp.com/macsendisk.com/wp-content/uploads/2025/10/Drishyam-Hindi-Movie-DVD.jpg?fit=743%2C1024&ssl=1",
       cast: ["Ajay Devgn", "Tabu", "Shriya Saran"]
     },
     {
@@ -194,7 +194,7 @@ export const movies = [
       genre: "Action",
       year: 1975,
       director: "Ramesh Sippy",
-      image: "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?w=500&q=80",
+      image: "https://m.media-amazon.com/images/M/MV5BMmRkN2I4MGUtYjAwMC00NjNjLWIxNWItYTMzZWViNDc0NDVhXkEyXkFqcGc@._V1_.jpg",
       cast: ["Amitabh Bachchan", "Dharmendra", "Hema Malini"]
     },
     {
@@ -205,7 +205,7 @@ export const movies = [
       genre: "Romance",
       year: 2012,
       director: "Anurag Basu",
-      image: "https://images.unsplash.com/photo-1514306191717-452ec28c7814?w=500&q=80",
+      image: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Barfi%21_poster.jpg/250px-Barfi%21_poster.jpg",
       cast: ["Ranbir Kapoor", "Priyanka Chopra", "Ileana D'Cruz"]
     },
     {
@@ -216,7 +216,7 @@ export const movies = [
       genre: "Crime",
       year: 2012,
       director: "Anurag Kashyap",
-      image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?w=500&q=80",
+      image: "https://m.media-amazon.com/images/I/519EvjZpJzL._AC_UF894,1000_QL80_.jpg",
       cast: ["Manoj Bajpayee", "Nawazuddin Siddiqui", "Pankaj Tripathi"]
     }
   ];
